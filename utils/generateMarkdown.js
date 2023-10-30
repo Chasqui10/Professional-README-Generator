@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// This function that returns a license badge based on which license is passed in from the index questionaire
+// If there are no license then the return for the function is an empty string
 function renderLicenseBadge(license) {
   if (!license) {
     return '';
@@ -8,8 +8,8 @@ function renderLicenseBadge(license) {
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// This function returns the license link that will be attached to the badges
+// If there are no license then the return for the function is an empty string
 function renderLicenseLink(license) {
   if (license === "MIT"){
     return `https://choosealicense.com/licenses/mit/#`
@@ -22,19 +22,18 @@ function renderLicenseLink(license) {
   }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function returns the license section of README.md 
+// If there are no license then the return for the function is an empty string
 function renderLicenseSection(license) {
   if (!license){
     return ``;
   } else {
-    return `
-    ## License
+    return `## License
     This project utilize this ${license}.`
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// This function generates the markdown for README.md file still implementing the data from the inquirer prompt 
 function generateMarkdown(data) {
   return `
   # ${data.title}
