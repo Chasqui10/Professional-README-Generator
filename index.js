@@ -52,7 +52,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select which license that applies to your project: ',
-        choices: ['MIT','GNU AGPLv3','Mozilla Public License 2.0'],
+        choices: ['MIT','GNU_AGPLv3','Mozilla_Public_License_2.0'],
         when: ({confirmlicense}) => {
             if (confirmlicense) {
             return true;
@@ -67,7 +67,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tests',
+        name: 'test',
         message: 'Describe the testing procedure for your project: ',
     },    
 ];
