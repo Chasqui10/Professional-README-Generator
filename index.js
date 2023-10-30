@@ -77,7 +77,14 @@ const questions = [
 
 // TODO: Create a function to initialize app
 function init() {
-    return inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    .then((answers) => {
+        const readMeInfo =  generateMarkdown(answers);
+        
+        fs.writeFile('READMEtest12345.md',readMeInfo, (err) =>
+        err? console.log(err) : console.log("Sucessfully added README file!!")
+        );
+    });
 };
 
 // Function call to initialize app
