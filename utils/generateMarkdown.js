@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   } else {
-    return `[![${license}](https://img.shields.io/badge/any_text-you_like-blue)]`
+    return `[![${license} License](https://img.shields.io/badge/License-${license}-blue)](${renderLicenseLink(license)})`
   }
 };
 
@@ -28,20 +28,18 @@ function renderLicenseSection(license) {
   if (!license){
     return ``;
   } else {
-    return `## License
+    return `##License
     This project utilize this ${license}`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
+  return `#${data.title}
 
   ${renderLicenseBadge(data.license)}
-
-  # ${data.title}
   
-  ## Description 
+  ##Description 
   ${data.description}
 
   ## Table of Content
@@ -53,21 +51,21 @@ function generateMarkdown(data) {
   -[Test](#test)<br>
   -[Questions](#questions)<br>
 
-  ## Installation
+  ##Installation
   ${data.installation}
   
-  ## Usage
+  ##Usage
   ${data.usage}
 
   ${renderLicenseSection(data.license)}
   
-  ## Contribution
+  ##Contribution
   ${data.contribution}
   
-  ## Test
+  ##Test
   ${data.test}
   
-  ## Questions
+  ##Questions
   Thank you again for reviewing this README.md. 
   If you have additional questions please feel free to email me and feel free to check out my other repos.
   GitHub: [${data.githubName}](https://github.com/${data.githubName})
