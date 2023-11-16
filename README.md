@@ -31,16 +31,16 @@
   For the index.js script I changed the fs.writeFIle to writea README12345.md instead of the README.md for the final projects.  Below there is an image indicating the test .md file.  <br>
 
   **Example of README.md name change for test purposes:** <br>
-  ![Example of README.md name change for test purposes](./assets/images/md-name-change.jpg)
+  ![Example of README.md name change for test purposes](./assets/Images/md-name-change.jpg)
 
   **Example of Node Index in Terminal:** <br>
-  ![Example of Node Index in Terminal](./assets/images/inquirer-node-input.jpg)
+  ![Example of Node Index in Terminal](./assets/Images/inquirer-node-input.jpg)
 
   **Example of README12345.md Test Purpose Pt.1:** <br>
-  ![Example of README12345.md Test Purpose Pt.1](./assets/images/preview-md-part1.jpg)
+  ![Example of README12345.md Test Purpose Pt.1](./assets/Images/preview-md-part1.jpg)
 
   **Example of README12345.md Test Purpose Pt.2:** <br>
-  ![Example of README12345.md Test Purpose Pt.2](./assets/images/preview-md-part2.jpg)
+  ![Example of README12345.md Test Purpose Pt.2](./assets/Images/preview-md-part2.jpg)
 
 
 
